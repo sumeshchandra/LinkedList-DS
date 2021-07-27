@@ -1,8 +1,8 @@
 package com.LinkList;
 
-public class MyNode<K> {
+public class MyNode<K> implements INode<K> {
     private K key;
-    private MyNode next;
+    private INode next;
 
     /**
      * took key as a parameter in this constructor.
@@ -12,18 +12,27 @@ public class MyNode<K> {
         this.key = null;
         this.next = null;
     }
-
     /**
-     * here we have used getter method.
+     * here we have used getter and setter method for key and INode.
      */
-    public MyNode getNext() {
+    @Override
+    public K getKey() {
+        return key;
+    }
+
+    @Override
+    public void setKey(K key) {
+        this.key = key;
+    }
+
+    public INode getNext() {
         return next;
     }
 
     /**
      * here it will set the next key value.
      */
-    public void setNext(MyNode next) {
+    public void setNext(INode next) {
         this.next = next;
     }
 }
