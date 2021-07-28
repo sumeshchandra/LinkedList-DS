@@ -23,6 +23,17 @@ public class MyLinkedList {
 		}
 
 	}
+	 public void append(INode myNode){
+	        if (this.head==null){
+	            this.head=myNode;
+	        }
+	        if (this.tail==null){
+	            this.tail=myNode;
+	        }else {
+	            this.tail.setNext(myNode);
+	            this.tail=myNode;
+	        }
+	 }
 
 	public void printNodes() {
 
@@ -42,13 +53,4 @@ public class MyLinkedList {
 
 	}
 
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public INode pop() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
