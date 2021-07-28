@@ -34,6 +34,15 @@ public class MyLinkedList {
 	            this.tail=myNode;
 	        }
 	 }
+	 
+	 /**
+	     * here i have added insert method which took two inputs given below.
+	     */
+	 public void insert(INode myNode, INode newNode) {
+	        INode temp = myNode.getNext();
+	        myNode.setNext(newNode);
+	        newNode.setNext(temp);
+	    }
 
 	public void printNodes() {
 
