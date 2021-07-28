@@ -40,6 +40,17 @@ public class UCNodesOutput {
 		myLinkedList.insert(myFirstNode, mySecondNode);
 		
 		myLinkedList.printNodes(); // ---------------------> UC4
+		
+		
+		/** UC5
+		 * Here i have used i have used pop
+		 * 		 to check the delete(pop) method.
+		 */
+		
+		System.out.println("After deletion ");
+		myLinkedList.pop();
+		
+		myLinkedList.printNodes(); // ---------------------> UC5
 	}
 }
 
