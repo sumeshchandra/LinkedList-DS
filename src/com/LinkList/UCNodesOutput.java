@@ -3,18 +3,15 @@ package com.LinkList;
 public class UCNodesOutput {
 
     public static void main(String[] args) {
-        MyNode<Integer> myFirstNode = new MyNode<Integer>(56);
-        MyNode<Integer> mySecondNode = new MyNode<Integer>(30);
-        MyNode<Integer> myThirdNode = new MyNode<Integer>(70);
+    	INode myFirstNode = new MyNode<Integer>(70);
+		INode mySecondNode = new MyNode<Integer>(30);
+		INode myThirdNode = new MyNode<Integer>(56);
+		
+		MyLinkedList myLinkedList = new MyLinkedList();
+		myLinkedList.add(myFirstNode);
+		myLinkedList.add(mySecondNode);
+		myLinkedList.add(myThirdNode);
 
-        myFirstNode.setNext(mySecondNode);
-        mySecondNode.setNext(myThirdNode);
-        boolean result = myFirstNode.getNext().equals(mySecondNode) &&
-                mySecondNode.getNext().equals(myThirdNode);
-
-        if (myFirstNode.getNext() == mySecondNode && mySecondNode.getNext() == myThirdNode) {
-            System.out.println("Nodes are Connected");
-
-        }
+		myLinkedList.printNodes(); //------------------> UC2
     }
 }

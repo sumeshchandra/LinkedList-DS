@@ -1,38 +1,44 @@
 package com.LinkList;
 
 public class MyNode<K> implements INode<K> {
-    private K key;
-    private INode next;
 
-    /**
-     * took key as a parameter in this constructor.
-     * where it initiate key value and next value should be null.
-     */
-    public MyNode(K key) {
-        this.key = null;
-        this.next = null;
-    }
-    /**
-     * here we have used getter and setter method for key and INode.
-     */
-    @Override
-    public K getKey() {
-        return key;
-    }
+	private K key;
+	private INode next;
 
-    @Override
-    public void setKey(K key) {
-        this.key = key;
-    }
+	public MyNode(K key) {
 
-    public INode getNext() {
-        return next;
-    }
+		this.key = key;
+		this.next = null;
+	}
 
-    /**
-     * here it will set the next key value.
-     */
-    public void setNext(INode next) {
-        this.next = next;
-    }
+	@Override
+	public void setKey(K key) {
+		// TODO Auto-generated method stub
+		this.key = key;
+	}
+
+	@Override
+	public K getkey() {
+		// TODO Auto-generated method stub
+		return this.key;
+	}
+
+	@Override
+	public void setNext(INode next) {
+		// TODO Auto-generated method stub
+		this.next = next;
+
+	}
+
+	@Override
+	public INode getNext() {
+		return this.next;
+	}
+
+	@Override
+	public K getKey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
