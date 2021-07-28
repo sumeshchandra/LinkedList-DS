@@ -27,7 +27,6 @@ public class MyNode<K> implements INode<K> {
 	public void setNext(INode next) {
 		// TODO Auto-generated method stub
 		this.next = next;
-
 	}
 
 	@Override

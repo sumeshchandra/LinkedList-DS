@@ -13,5 +13,6 @@ public class UCNodesOutput {
 		myLinkedList.add(myThirdNode);
 
 		myLinkedList.printNodes(); //------------------> UC2
+   
     }
 }
