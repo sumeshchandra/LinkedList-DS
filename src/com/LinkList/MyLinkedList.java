@@ -23,26 +23,35 @@ public class MyLinkedList {
 		}
 
 	}
-	 public void append(INode myNode){
-	        if (this.head==null){
-	            this.head=myNode;
-	        }
-	        if (this.tail==null){
-	            this.tail=myNode;
-	        }else {
-	            this.tail.setNext(myNode);
-	            this.tail=myNode;
-	        }
-	 }
-	 
-	 /**
-	     * here i have added insert method which took two inputs given below.
-	     */
-	 public void insert(INode myNode, INode newNode) {
-	        INode temp = myNode.getNext();
-	        myNode.setNext(newNode);
-	        newNode.setNext(temp);
-	    }
+
+	public void append(INode myNode) {
+		if (this.head == null) {
+			this.head = myNode;
+		}
+		if (this.tail == null) {
+			this.tail = myNode;
+		} else {
+			this.tail.setNext(myNode);
+			this.tail = myNode;
+		}
+	}
+	/**
+	 * this pop method will delete the first value of the linkedlist.
+	 * */
+	public INode pop() {
+		INode node = this.head;
+		this.head = head.getNext();
+		return node;
+	}
+
+	/**
+	 * here i have added insert method which took two inputs given below.
+	 */
+	public void insert(INode myNode, INode newNode) {
+		INode temp = myNode.getNext();
+		myNode.setNext(newNode);
+		newNode.setNext(temp);
+	}
 
 	public void printNodes() {
 
