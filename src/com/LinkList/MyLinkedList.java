@@ -42,13 +42,4 @@ public class MyLinkedList {
 
 	}
 
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public INode pop() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
